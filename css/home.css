@@ -1,0 +1,36 @@
+.home,
+.about,
+.mision,
+.partners {
+    min-height: 80vh;
+}
+
+.know-more {
+    position: relative;
+    border: 1px solid #8E2EDF;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.know-more span {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+svg.tag-cloud text {
+    cursor: default;
+    transition: .3s;
+}
+
+svg.tag-cloud text:hover {
+    cursor: default;
+    transform: scale(1.2);
+}
