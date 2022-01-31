@@ -1,8 +1,16 @@
 .home,
 .about,
 .mision,
-.partners {
-    min-height: 80vh;
+.partners,
+.cases,
+.contact {
+    min-height: 90vh;
+}
+
+.cases,
+.contact {
+    display: flex;
+    align-items: center;
 }
 
 .know-more {

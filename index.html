@@ -20,12 +20,14 @@
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <script type="module" src="js/main.js" async></script>
+  <!-- <script type="module" src="js/main.js" async></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.37.5/tsparticles.min.js"></script>
 </head>
 
-<body class="bg">
+<body>
 
   <!-- Add your site or application content here -->
+  <div id="particles-js"></div>
   <header class="container">
     <div class="row justify-content-end">
       <div class="col-2">
@@ -54,7 +56,7 @@
           <p>por hubs de serviços em comunicação para</p>
           <p><strong>atender de forma personalizada</strong></p>
         </div>
-        <img class="mock" src="" alt="">
+        <div class="mock"></div>
       </div>
       <div class="row">
         <div class="know-more">
@@ -202,63 +204,93 @@
     </div>
   </section>
 
-  <section class="container">
-    <div class="row carousel">
-      <div class="col align-self-center text-center">
-       
+  <section class="container cases">
+
+    <div class="row">
+      <div class="col carousel">
+        <div class="carousel__item position-relative">
+
+          <h2 class="carousel__title">NOTCO</h2>
+          <img src="./img/cases/we_work.jpg" alt="imagem case We Work">
+          <p class="carousel__description">Pequena descrição com alguns caracteres para explicar o formato, data e
+            qualquer outro detalhe substancial</p>
+          <div class="carousel__nextItem">
+            <img src="./img/Icons/right-arrow.png" alt="">
+          </div>
+        </div>
       </div>
     </div>
-    <section class="container">
-      <div class="row partners">
-        <div class="col-lg-3">
-          <img src="./img/oracle.svg" alt="">
-        </div>
-        <div class="col-lg-3">
-          <img src="./img/globo.svg" alt="">
-        </div>
-        <div class="col-lg-3">
-          <img src="./img/notco.svg" alt="">
-        </div>
-        <div class="col-lg-3">
-          <img src="./img/quintoandar.svg" alt="">
-        </div>
-        <div class="col-lg-3">
-          <img src="./img/wework.svg" alt="">
-        </div>
-        <div class="col-lg-3">
-          <img src="./img/castanhal.svg" alt="">
-        </div>
-        <div class="col-lg-3">
-          <img src="./img/lec.svg" alt="">
-        </div>
-        <div class="col-lg-3">
-          <img src="./img/mosaic.svg" alt="">
-        </div>
-        <div class="col-lg-3">
-          <img src="./img/comuniquese.svg" alt="">
-        </div>
-        <div class="col-lg-3">
-          <img src="./img/pampam.svg" alt="">
-        </div>
-        <div class="col-lg-3">
-          <img src="./img/algar.svg" alt="">
-        </div>
-        <div class="col-lg-3">
-          <img src="./img/deal.svg" alt="">
-        </div>
-      </div>
-    </section>
-    <section class="container">
-      <div class="row carousel">
-        <div class="col align-self-center text-center">
-          
-        </div>
-      </div>
-    
+
   </section>
+  <section class="container">
+    <div class="row partners">
+      <div class="col-lg-3">
+        <img src="./img/oracle.svg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="./img/globo.svg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="./img/notco.svg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="./img/quintoandar.svg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="./img/wework.svg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="./img/castanhal.svg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="./img/lec.svg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="./img/mosaic.svg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="./img/comuniquese.svg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="./img/pampam.svg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="./img/algar.svg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="./img/deal.svg" alt="">
+      </div>
+    </div>
+  </section>
+  <section  class="container">
+    <div class="row contact">
+      <div class="col-7">
+        <h2>Contato</h2>
+        <form action="">
+          <p>Olá!</p>
+          <p>
+            Eu sou
+            <input type="text" id="name">
+            da empresa
+            <input type="text" id="company">
+            e preciso de informações sobre
+            <input type="text" id="subject">.
+            </p>
+            <p>
+              Me ligue no 
+              <input type="tel">
+              Ou me mande um e-mail para
+              <input type="email">
+            </p>            
+            <button>Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script type="module" src="js/main.js"></script>
+  <!-- <script type="module" src="js/main.js"></script> -->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -267,6 +299,16 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
   <script src="./js/vendor/relax.js" async></script>
+  <script src="./js/vendor/tsparticles.min.js" async></script>
+  <script src="js/particles.min.js" async></script>
+
+  <script>
+    particlesJS.load('particles-js', '/js/vendor/particlesjs-config.json', function () {
+      console.log('callback - particles.js config loaded');
+    });
+
+  </script>
+
 </body>
 
 </html>
