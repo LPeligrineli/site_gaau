@@ -19,9 +19,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/main.css">
-
   <!-- <script type="module" src="js/main.js" async></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.37.5/tsparticles.min.js"></script>
 </head>
 
 <body>
@@ -262,7 +260,7 @@
       </div>
     </div>
   </section>
-  <section  class="container">
+  <section class="container">
     <div class="row contact">
       <div class="col-7">
         <h2>Contato</h2>
@@ -275,14 +273,14 @@
             <input type="text" id="company">
             e preciso de informações sobre
             <input type="text" id="subject">.
-            </p>
-            <p>
-              Me ligue no 
-              <input type="tel">
-              Ou me mande um e-mail para
-              <input type="email">
-            </p>            
-            <button>Enviar</button>
+          </p>
+          <p>
+            Me ligue no
+            <input type="tel">
+            Ou me mande um e-mail para
+            <input type="email">
+          </p>
+          <button>Enviar</button>
         </form>
       </div>
     </div>
@@ -298,16 +296,13 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
-  <script src="./js/vendor/relax.js" async></script>
-  <script src="./js/vendor/tsparticles.min.js" async></script>
-
+  <!-- <script src="./js/particles.min.js"></script> -->
+  <script src="./js/vendor/particles.js"></script>
   <script>
-    particlesJS.load('particles-js', '/js/vendor/particlesjs-config.json', function () {
-      console.log('callback - particles.js config loaded');
+    particlesJS.load('particles-js', 'js/particlesjs-config.json', function () {
+      return
     });
-
   </script>
-
 </body>
 
 </html>
