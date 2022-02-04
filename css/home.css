@@ -7,6 +7,15 @@
     min-height: 90vh;
 }
 
+header {
+    background-color: #8E2EDF;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
 .cases,
 .contact {
     display: flex;
