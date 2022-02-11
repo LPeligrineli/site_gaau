@@ -1,4 +1,13 @@
 {
+  "background": {
+    "color": {
+      "value":"#1b1b1b"
+    }
+  },
+  "fullScreen": {
+    "enable": true,
+    "zIndex": -1
+  },
   "particles": {
     "number": {
       "value": 10,
@@ -75,7 +84,7 @@
         "mode": "bubble"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true

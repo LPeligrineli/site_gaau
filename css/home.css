@@ -1,3 +1,5 @@
+@import url('/css/animations.css');
+
 .home,
 .about,
 .mision,
@@ -8,12 +10,146 @@
 }
 
 header {
-    background-color: #8E2EDF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 102;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;   
+    width: 70px; 
+    height: 100vh;
+    background-color: #161616;
+    transform: translateX(-100%);
+    transition: .3s all ease-in-out;
+    z-index: 101;
+}
+
+aside.active {
+    transform: translateX(0);
+    transition: .3s all ease-in-out;
+}
+
+aside ul {
+    margin-top: 100px;
+    padding: 0;
+    padding-inline-start: 0;
+}
+
+aside ul li {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 25px 10px;
+    cursor: pointer;
+}
+
+aside ul li img {
+    margin-right: 16
+}
+ 
+aside .navbar {
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .icon__menu {
+    width: 36px;
+    height: 30px;
+    margin-left: auto;
+    position: absolute;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+header .icon__menu::after {
+    content: '';
+    display: block;
+    border-radius: 3px 0px 0px 3px;
+    width: 55%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+header .icon__menu::before {
+    content: '';
+    display: block;
+    border-radius: 0px 3px 3px 0px;
+    width: 55%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.icon__menu__line {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: absolute;
+
+}
+
+.menu__title {
+    width: 100px;
+    padding: 5px 10px;
+    background-color: #7d54a1;
+    transform: translate(-20%);
+    opacity: 0;
+    transition: .3s all ease-in-out;
+    z-index: 999;
+    border-radius: 4px;
+}
+
+ul li:hover .menu__title {
+    transform: translate(10%);
+    opacity: 1; 
+    transition: .3s all ease-in-out;
+
+}
+
+ul li:hover svg {
+    fill: #fff;
+}
+
+ul li::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 40px;
+    position: absolute;
+    left: 10%;
+    opacity: 0;
+    background-color: #7d54a1;
+    transition: .3s all ease-in-out;
+
+}
+
+ul li:hover::before {
+    opacity: 1;
+    left: 15%;
 }
 
 header img {
     width: 100px;
     height: auto;
+    position: fixed;
 }
 
 .cases,
@@ -39,6 +175,11 @@ header img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.body__page {
+    margin-top: 60px;
+    margin-left: 100px;
 }
 
 

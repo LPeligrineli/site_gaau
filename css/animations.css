@@ -1,0 +1,12 @@
+@keyframes toggleHamburguer {
+    0% {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    50% {
+        left: 0;
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
