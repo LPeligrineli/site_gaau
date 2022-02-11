@@ -180,6 +180,7 @@ header img {
 .body__page {
     margin-top: 60px;
     margin-left: 100px;
+    overflow: hidden;
 }
 
 
@@ -191,4 +192,27 @@ svg.tag-cloud text {
 svg.tag-cloud text:hover {
     cursor: default;
     transform: scale(1.2);
+}
+
+.missao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.missao_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+.missao_circle:nth-child(1) {
+    transform: translateX(10%);
+}
+
+.missao_circle:nth-child(3) {
+    transform: translateX(-10%);
 }
