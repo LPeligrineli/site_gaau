@@ -1,5 +1,14 @@
 @import url('/css/animations.css');
 
+header {
+    background-color: #1b1b1b;
+}
+
+header .header__logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .home,
 .about,
 .mision,
@@ -7,6 +16,15 @@
 .cases,
 .contact {
     min-height: 90vh;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+}
+
+.home .home__content {
+    margin-bottom: 20vh;
 }
 
 
@@ -94,6 +112,38 @@ ul li:hover::before {
     left: 15%;
 }
 
+@media only screen and (max-width: 640px) {
+    header .icon__menu {
+        display: none !important;
+    }
+    aside {
+        bottom: 0; 
+        width: 100vw; 
+        height: 7vh;
+        top: unset;
+        transform: translate(0);
+    }
+    aside ul {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    aside ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .menu__title {
+        display: none;
+    }
+    header .header__logo {
+        justify-content: center;
+    }
+}
+
 
 .cases,
 .contact {
@@ -126,15 +176,10 @@ ul li:hover::before {
     overflow: hidden;
 }
 
-
-svg.tag-cloud text {
-    cursor: default;
-    transition: .3s;
-}
-
-svg.tag-cloud text:hover {
-    cursor: default;
-    transform: scale(1.2);
+@media only screen and (max-width: 720px) {
+    .body__page {
+        padding-left: 0;
+    }
 }
 
 .missao {

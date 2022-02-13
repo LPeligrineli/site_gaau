@@ -4,6 +4,7 @@
 @import url('./carousel.css');
 @import url('./contato.css');
 @import url('./header.css');
+@import url('./tag-cloud.css');
 
 :root {
   font-size: 18px;
@@ -13,7 +14,7 @@
   box-sizing: border-box;
 }
 
-html {
+body {
   background-color: #1b1b1b;
   color: #f1f1f1;
   font-size: 1em;
@@ -95,7 +96,7 @@ textarea {
   }
 
   .title {
-    font-size: 4.7rem;
+    font-size: max(6vw, 45px);
     font-weight: 900;
     text-transform: uppercase;
     margin: 0;

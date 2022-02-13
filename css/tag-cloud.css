@@ -1,0 +1,13 @@
+svg .tag-cloud--emphasis {
+    fill: rgb(141,45,225);
+}
+
+svg.tag-cloud text {
+    cursor: default;
+    transition: .3s;
+}
+
+svg.tag-cloud text:hover {
+    cursor: default;
+    transform: scale(1.2);
+}

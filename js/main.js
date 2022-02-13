@@ -6,4 +6,3 @@ getMenuIcon.addEventListener('click', function() {
     getNav.classList.toggle('active')
 
 })
-
