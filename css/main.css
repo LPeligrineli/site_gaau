@@ -3,9 +3,14 @@
 @import url('./helpers.css');
 @import url('./carousel.css');
 @import url('./contato.css');
+@import url('./header.css');
 
 :root {
   font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
@@ -15,10 +20,6 @@ html {
   line-height: 1.4;
   font-family: 'Montserrat', serif;
 }
-
-/* .container {
-  max-width: 980px !important;
-} */
 
 ::-moz-selection {
   background: #8E2EDF;

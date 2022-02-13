@@ -12,6 +12,11 @@
     position: relative !important;
 }
 
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .mock {
     position: absolute;
     top: 50%;
