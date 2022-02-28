@@ -10,9 +10,11 @@
     .carousel__item {
         flex-direction: column;
     }
+
     .carousel .carousel__description {
         margin-top: 2rem;
     }
+
     .carousel-control-prev {
         display: none;
     }
@@ -38,6 +40,7 @@
 }
 
 .carousel .carousel__description {
+    width    : 25%;
     font-size: 1rem;
     margin   : 0 15px;
 }
