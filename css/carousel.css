@@ -6,21 +6,6 @@
     margin         : 2rem 0;
 }
 
-@media screen and (max-width: 420px) {
-    .carousel__item {
-        flex-direction: column;
-    }
-
-    .carousel .carousel__description {
-        margin-top: 2rem;
-    }
-
-    .carousel-control-prev {
-        display: none;
-    }
-
-}
-
 .carousel__item img {
     max-width: 100%;
     width    : 60%;
@@ -48,4 +33,28 @@
 .carousel .carousel__nextItem {
     align-self: center;
     cursor    : pointer
+}
+
+@media screen and (max-width: 420px) {
+    .carousel__item {
+        flex-direction: column;
+    }
+
+    .carousel .carousel__title {
+        font-size: 2rem;
+    }
+
+    .carousel .carousel__description {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    #cases .carousel-control-prev {
+        display: none;
+    }
+
+    .carousel__item img {
+        width: 100%;
+    }
+
 }

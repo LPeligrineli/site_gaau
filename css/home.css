@@ -52,12 +52,16 @@ aside ul {
     padding-inline-start: 0;
 }
 
-aside ul li {
+aside ul li a{
     display: flex;
     list-style: none;
     align-items: center;
     margin: 25px 10px;
     cursor: pointer;
+}
+
+aside ul li a {
+    text-decoration: none;
 }
 
 aside ul li img {
@@ -73,9 +77,10 @@ aside .navbar {
 
 
 .menu__title {
-    width: 100px;
+    width: max-content;
     padding: 5px 10px;
     background-color: #7d54a1;
+    color: #fff;
     transform: translate(-20%);
     opacity: 0;
     transition: .3s all ease-in-out;
@@ -83,15 +88,19 @@ aside .navbar {
     border-radius: 4px;
 }
 
-ul li:hover .menu__title {
+ul li a:hover .menu__title {
     transform: translate(10%);
     opacity: 1; 
     transition: .3s all ease-in-out;
 
 }
 
-ul li:hover svg {
+ul li a:hover svg {
     fill: #fff;
+}
+
+ul li::marker {
+    color: transparent;
 }
 
 ul li::before {
@@ -110,38 +119,6 @@ ul li::before {
 ul li:hover::before {
     opacity: 1;
     left: 15%;
-}
-
-@media only screen and (max-width: 640px) {
-    header .icon__menu {
-        display: none !important;
-    }
-    aside {
-        bottom: 0; 
-        width: 100vw; 
-        height: 7vh;
-        top: unset;
-        transform: translate(0);
-    }
-    aside ul {
-        width: 100%;
-        margin: 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    aside ul li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-    }
-    .menu__title {
-        display: none;
-    }
-    header .header__logo {
-        justify-content: center;
-    }
 }
 
 
@@ -203,4 +180,48 @@ ul li:hover::before {
 
 .missao_circle:nth-child(3) {
     transform: translateX(-10%);
+}
+
+@media only screen and (max-width: 640px) {
+    header .icon__menu {
+        display: none !important;
+    }
+    aside {
+        bottom: 0; 
+        width: 100vw; 
+        height: 7vh;
+        top: unset;
+        transform: translate(0);
+    }
+    aside ul {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    aside ul li a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .menu__title {
+        display: none;
+    }
+    header .header__logo {
+        justify-content: center;
+    }
+    .home .home__content {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .missao_circle:nth-child(1) {
+        transform: translateY(10%);
+    }
+    
+    .missao_circle:nth-child(3) {
+        transform: translateY(-10%);
+    }
 }
