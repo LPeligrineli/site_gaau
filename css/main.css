@@ -6,6 +6,7 @@
 @import url('./header.css');
 @import url('./tag-cloud.css');
 @import url('./movimento-gaau.css');
+@import url('./about.css');
 
 :root {
   font-size: 18px;
@@ -104,13 +105,14 @@ textarea {
     font-size: max(6vw, 45px);
     font-weight: 900;
     text-transform: uppercase;
+    line-height: 1em;;
     margin: 0;
   }
 
   .font-sub {
     font-size: 1rem;
-    font-weight: 500;
-    margin: 0;
+    font-weight: 100;
+    margin: 1rem;
   }
 
   .container > .row > * {
@@ -125,12 +127,6 @@ textarea {
   strong {
     font-size: 1.5em;
     font-weight: 700;
-  }
-
-  @media only screen and (max-width: 640px) {
-    p {
-      font
-    }
   }
 
 

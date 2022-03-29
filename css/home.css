@@ -130,10 +130,29 @@ ul li:hover::before {
 
 .know-more {
     position: relative;
-    border: 1px solid #8E2EDF;
-    width: 50px;
-    height: 50px;
+    border: 2px solid #8E2EDF;
+    width: 60px;
+    height: 60px;
     border-radius: 100%;
+    color: #fff;
+    transition: .3s all linear;
+}
+
+.know-more:hover {
+    box-shadow: 0px 0px 20px 8px #8E2EDF;
+    transform: scale(1.2);
+    color: #fff;
+
+}
+
+@keyframes rotate_2 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: translate(0deg);
+    }
 }
 
 .know-more span {
@@ -141,6 +160,7 @@ ul li:hover::before {
     text-transform: uppercase;
     letter-spacing: .1em;
     width: max-content;
+    font-weight: 500;
     position: absolute;
     top: 50%;
     left: 50%;

@@ -14,15 +14,14 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <script type="module" src="js/main.js" async></script>
+  <script src="./js/vendor/tsparticles.min.js"></script>
 
 </head>
 
@@ -101,17 +100,17 @@
   <div class="body__page">
     <section id="home" class="container">
       <div class="row home">
-        <div class="col-lg-6 col-12 home__content animate__animated animate__fadeInLeftBig">
+        <div id="home-title" class="col-lg-6 col-12">
           <h1 class="title">Você tem uma ideia?</h1>
           <p class="font-sub">A gente produz pra você!</p>
         </div>
-        <div id="movimento-gaau" class="col-lg-6 col-12 position-relative animate__animated animate__fadeInRightBig">
-        <a style="cursor: pointer;" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-          <div class="movimento-gaau"></div>
-          <div class="text_movimento">
-            <img src="./img/movimento_Gaau_initial.png" alt="">
-          </div>
-        </a>        
+        <div id="movimento-gaau" class="col-lg-6 col-12 position-relative">
+          <a style="cursor: pointer;" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+            <div class="movimento-gaau"></div>
+            <div class="text_movimento">
+              <img src="./img/movimento_Gaau_initial.png" alt="">
+            </div>
+          </a>
         </div>
 
       </div>
@@ -119,21 +118,19 @@
     <section id="about" class="container position-relative">
       <div class="row justify-content-end align-items-center about">
         <div class="col">
-          <div class="text-right">
+          <div id="about-text" class="text-right">
             <p> Gaau é uma rede inteligente formada</p>
             <p>por hubs de serviços em comunicação para</p>
             <p><strong>atender de forma personalizada</strong></p>
           </div>
-          <div class="mock">
+          <div id="about-image" class="mock">
 
           </div>
         </div>
         <div class="row">
-          <div class="know-more">
-            <span>
-              Saiba mais
-            </span>
-          </div>
+          <a class="know-more" href="">
+            <span>Saiba mais</span>
+          </a>
         </div>
       </div>
     </section>
@@ -422,7 +419,7 @@
       </div>
     </section>
   </div>
-  
+
   <div id="tsparticles"></div>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
@@ -436,8 +433,11 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
   <script src="js/vendor/tsparticles.min.js"></script>
-  <script src="js/main.js"></script>
   <script src="js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
